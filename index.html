@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Fylo data storage component</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="static/css/styles.css" />
+  </head>
+  <body>
+    <main class="main-container">
+      <div class="interaction-container">
+        <img class="interaction-container-logo" src="./images/logo.svg" alt="" />
+        <div class="actions">
+          <button class="action">
+            <img src="./images/icon-document.svg" alt="icon document" />
+          </button>
+          <button class="action">
+            <img src="./images/icon-folder.svg" alt="icon folder" />
+          </button>
+          <button class="action upload">
+            <img id="upload" src="./images/icon-upload.svg" alt="icon upload" />
+          </button>
+        </div>
+      </div>
+      <div class="information-container">
+        <p class="information-text">You’ve used <strong>815 GB</strong> of your storage</p>
+        <div class="information-progress">
+          <span class="progress-value"></span>
+        </div>
+        <div class="indicators">
+          <strong>0 GB</strong>
+          <strong>1000 GB</strong>
+        </div>
+        <div class="alert">
+          <p><span class="bold">185</span>GB Left</p>
+        </div>
+      </div>
+    </main>
+    <script src="./static/js/app.js"></script>
+  </body>
+</html>
