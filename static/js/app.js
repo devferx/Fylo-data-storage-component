@@ -5,7 +5,7 @@ let contador = 5;
 $uploadButton.addEventListener("click", function () {
   var intervalo = setInterval(() => {
     if (contador > 99) {
-      $progressValue.classList.remove("active");
+      window.navigator.vibrate(100);
       clearInterval(intervalo);
     } else if (contador > 5) {
       !$progressValue.classList.contains("active") &&
